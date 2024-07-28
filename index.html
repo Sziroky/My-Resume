@@ -1,164 +1,383 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice to meet you!</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+    <!-- navbar with anchors to specific content on page (sections) -->
+    <div class="px-3 py-2 text-bg-dark border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-center">
+            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+               <img src="./assets/images/signature_pandadoc.png" alt="sign" class="site-logo">
+            </a>
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+                    <use xlink:href="#home"></use></svg>
+                    About me
+                </a>
+                </li>
+                <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use><path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/></svg>
+                    Projects & Experience
+                </a>
+                </li>
+                <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
+                        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/><use xlink:href="#table"></use></svg>
+                    Education
+                </a>
+                </li>
+                <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+                        <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/><use xlink:href="#grid"></use></svg>
+                    Skills
+                </a>
+                </li>
+                <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+                        <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/><use xlink:href="#people-circle"></use></svg>
+                    Contact
+                </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
 
-    <img src="./assets/images/PXL_20240624_211402000.jpg" width="350" alt="Peter is Smiling to You" align="right"/>
-    <h1>Piotr Sziroky</h1>
-    <br/>
-    <hr width="700" align="left"/>
-    <h2>About Me:</h2>
-    <hr width="700" align="left"/>
+    <!-- First impresion!  -->
+    <div class="container-fluid gradient-background col-xxl px-4 py-1">
+        <div class="row flex-lg-row align-items-center g-0 py-0">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="./assets/images/thats-me-color.png" class="d-block mx-lg-auto img-fluid thats-me" alt="Bootstrap Themes" width="400" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-6 fw-bold text-body-emphasis lh-1 mb-3">Let's Change the Tommorow Together!</h1>
+            <p class="lead">Hi! I'm Peter. A commited, passionate young man with huge interest in <span class="important"> 
+                AI </span> & <span class="important"> Data Science, Earth Sciences, computer sciences </span> and <span class="important"> Surrounding World.</span> My mission is to use my skills to improve myself and contribute for a better Tommorow.
+                <br/>I want to show who I am And what I can do.<br/>Ready? 
+                <br/></p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+             
+              
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <p>Hi! I'm Peter. A commited, passionate young man with huge interest in <br/> 
-        physics, data science & computer sciences. My dream is to use my skills <br/> to develop surrounding world.<br/>I constantly learning new things not only for finally getting job in IT ;) <br/> 
-        but mostly that gaining new skills is huge satisfaction. I'd love to introduce more details about me.
-    </p>
-    <br/>
-    <hr width="700" align="left"/>
+    <!-- Story about Sziroky -->
+    <section class="meet">
+        <div class="break"></div>
+        
+        <div class="row row-cols-md-2 row-cols-md-2 align-items-md-center justify-content-center g-0 py-5">
+            <div class="col d-flex flex-column align-items-center  gap-0">
+              <h2 class="fw-bold text-body-emphasis">Who am I?</h2>
+              <p class="text-center text-body-secondary">Born in Opole (Poland) but always curious about big wide world around. <br>
+                 Fun, Full of passion and Friendly Person who's dedicating 200% into work and growth not only for Himself but for the whole Team.<br> 
+                 Not afraid of chalenges or difficulties ready to learn and solve problems. <br>I will be a great fit for company who is focused on development and solving contemprorary world problems on international or local scale.   </p>
+            </div>
+            </div>
+      
+            <div class="col">
+              <div class="row row-cols-1 row-cols-sm-2 g-6 mb-4">
+                <div class="col d-flex flex-column gap-4">
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Data Science</h4>
+                  <p class="text-body-secondary">Apple in my eye. From Data Colecting, ETL, Storage & Cleaning to Analysis, Processing, Modeling and Visualization. Very interested in data collection systems, ETL & ELT, Cloud Computing and Computer Vision.  </p>
+                </div>
+      
+                <div class="col d-flex flex-column gap-4">
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">GIS</h4>
+                  <p class="text-body-secondary">Huge Academic background. Very interested in Remote Sensing and AI combination for Earth observations And modern visualization of Earth. </p>
+                </div>
+      
+                <div class="col d-flex flex-column gap-4">
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Web Development</h4>
+                  <p class="text-body-secondary">It Started with Wordpress templates and e-commerce store but quickly need to understand the whole things that stays behind WEB pages from Design, Functionality Front-end & Back-end  </p>
+                </div>
+      
+                <div class="col d-flex flex-column gap-4">
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">SEO & Marketing</h4>
+                  <p class="text-body-secondary">Last but not least. This topic and work related to it gives me a lot of satisfaction. Because of real-world help for small brand and companies. What am i doing? SEO, content writing, Social mMedia menagment, Google Ads, E-Commerce.  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- My projects esspecialy segmentation  -->
+    <section class="projects">
+
+
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active btn-lg " aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./assets/images/Crevasses.jpg" alt="Crevasses" height="600px" width="1500px">
+            <div class="container">
+            <div class="carousel-caption text-start text-light my-3">
+                <h1 style="text-shadow: 2px 1px black;">Surface Crevasses Segmentation</h1>
+                <p class="text-light" style="text-shadow: 2px 1px black;">Bigest Project wchich results will be published in MDPI Journal. Machine learning and Deep Learning aplication in the Antarctica for automatic surface crevasses zones detection. Project involved Data collection, processing, augmentation, training Finish: 15 October 2024 </p>
+            </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/images/Sentinel-2_pillars.jpg" alt="Satellite" height="600px" width="1500px" >
+            <div class="container">
+            <div class="carousel-caption">
+                <h1 class="text-light" style="text-shadow: 2px 1px black; color: black;">SatZip2Postgres</h1>
+                <p class="text-light" style="text-shadow: 2px 1px black;" >Designed Python ETL pipeline for organising and extracting files from satellite archives downloaded from EO Browser. Program allows user to gather information about satellite imagery and store it in PostgreSQL</p>
+                
+            </div>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+          
+          
+            <div class="container marketing">
+          
+              <!-- Three columns of text below the carousel -->
+              <div class="row py-4 py-5">
+                <div class="col-lg-4 ">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="./assets/images/kelm solution.png" height="100px" width="200px"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal py-3">Spatial Data Engineer</h2>
+                  <h5>Kelm Solutions - Intership</h5>
+                  <p>Workin on Machine learning algorithm for automatic vechicle counting on aerial imagery.</p>
+                  
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="./assets/images/babuszka.png"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal py-3">SEO & Marketing Specialist</h2>
+                  <h5>Babuszka - E-Commerce - Freelance</h5>
+                  <p>E-commerce menagment, Website developer, Google Ads, SEO and marketing specialist. By mine actions monthly company income increased 27%</p>
+                  
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 ">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="./assets/images/Traffsoft.png" width="200px" alt=""><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal py-3">SCADA | Telemetry Specialist</h2>
+                  <h5>Traffsoft - Full-Time</h5>
+                  <p>Designig Telemetry Databases using SQL. Visualization of Processes in Watermenagment organisation that provides and clean water for around 18 000 people.   </p>
+                  
+                </div><!-- /.col-lg-4 -->
+              </div><!-- /.row -->
+          
+          
+              
     
-    <h2>Education:</h2>
-    <hr width="700" align="left"/>
-    <ol>
-        <li><h3>Schools & Universities</h3>
-            <ul>
-                <li>Geophysics | 2023-Present
-                    <hr width="170" align="left">
-                    University of Silesia (Poland)
-                    <br/>
-                    <br/>
-                    </li>
+    </section>
+    <!-- Carousels with courses and universities -->
+    <section class="education">
 
-                <li>Remote Sensing of the Cryosphere | 2023 - 2023
-                    <hr width="320" align="left">
-                    University Centre in Svalbard (Norway)
-                    <br>
-                    <br>
-                </li>
-
-                <li>Geohazards Engineering | 2020 - 2023
-                    <hr width="320" align="left">
-                    University of Silesia (Poland)
-                    <br>
-                    <br>
-                </li>
-            </ul>
-        </li>
+    </section>
+    <!-- list of tech skills -->
+    <section class="tech-skills">
+        <h3 class="divider">Skills and Education</h3>
+        <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="pb-2 border-bottom">Skills</h2>
         
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Python Programing</h3>
+                  <p>Numpy | Pandas | OpenCV | MatplotLib | Seaborne | Keras | Tensorflow | Regex | Web Scraping </p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">GIS </h3>
+                  <p>Spatial Analysis | QGIS | ArcGIS | PyQgis | ArcPy | GeoPandas | WEB maps (Selenium)</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">WEB Development</h3>
+                  <p>HTML | CSS | Bootstrap</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Microsoft</h3>
+                  <p>Excel | Word | Powerpoint | Azure</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Project Menagment</h3>
+                  <p>Git | Jira | Agile | Scrum </p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Databases</h3>
+                  <p>MySQL | PostgreSQL</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Marketing</h3>
+                  <p>Keywords Analysis | Google ADS | Content creating | Content Writing</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Soft-Skills</h3>
+                  <p>Creative | Critical Thinking | Open Minded | Team Worker</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <li>
-            <h3>Courses</h3>
-            <ul>
-                <li> Data Science Bootcamp - 241.5h 
-                    <hr width="230" align="left">
-                    Python programing, Statistics,Propability & linear algebra, Machine Learning(supervised and unsupervised), Deep Learning (Computer Vision, NLP, RNN,) 
-                    <a href="./assets/images/Certificate.pdf">Certificate</a>
-                    <br>
-                    <br>
-                </li>
-                <li>Comming soon: SEO Masterclass, Quantum Computing, Wed Development</li>
-            </ul>
-        </li>
-    </ol>
-    <br/>
-    <br/>
-    <hr/>
-    <h2>Proffesional Experience & Projects</h2>
-    <hr/>
-    <ol>
-        <li><h3>Projects:</h3>
-            <ul>
-                <li>
-                <p><a href="https://github.com/Sziroky/SatZip2Postgres">SatZip2Postgres</a><br> Python based ETL pipeline for satellite imagery archives content&information extraction.<br>
-                     Downloaded manually from <a href="https://apps.sentinel-hub.com/eo-browser/?zoom=10&lat=41.9&lng=12.5&themeId=DEFAULT-THEME&toTime=2024-06-25T21%3A22%3A40.607Z"> ESA's EO Browser</a> I create this tool because I want it to have an automatic <br/>
-                     files organization process (mainly for future Deep learning Purposes).<br/>
-                     This tool is a part of an bigger project described bellow. If i would describe this project with one sentence: <br/>
-                     "There is always a free way, if you want to get your data."  </p>
-                </li>
-                <li>
-                    <p><a href="https://www.linkedin.com/in/piotr-sziroky/">Application of Deep Learning in the Cryosphere: Surface Cre-vasses Zones Segmentation using U-net.</a><br> 
-                        I've always like chalenging myself and this project was really on and off all the time.<br> 
-                        It involves designing an ETL pipeline, cloud computing, image processing and CNN. <br>
-                        There was a lot I've had established and a lot that verified my establishments :D. <br>
-                        But after all I didn't give up, learned a lot, known my mistakes and create something that will helps people <br>
-                        that start their adventure with computer vision on highresolution imagery.</p>
-                </li>
-            </ul>
-        </li>
-        <li><h3>Professional Experience:</h3>
+          <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Education</h2>
         
-            <ul> 
-                <li>WEB Developer - Full Time - Babuszka
-                    <hr width="230" align="left" /> 
-                    <p>Description: </p>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(./assets/images/unis_web.jpg); height: 10%;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Remote Sensing of the Cryosphere</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="./assets/images/unis-hovedlogo-mtxt.webp" alt="Bootstrap" width="42" height="40" class="rounded-circle border border-white" style="background-color: antiquewhite;">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>University Center in Svalbard</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>Master Course</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/images/z28726335Q\,Wydzialu-Nauk-Przyrodniczych-US-w-Sosnowcu.jpg'); height: 150%;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-dark">Geophysics</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="./assets/images/us_logo_dobre.png" alt="Bootstrap" width="42" height="40" class="rounded-circle border border-white">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2 text-dark" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small style="color: black; font-weight: bold; background-color: aliceblue;">University of Silesia</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small style="color: black;bold; background-color: aliceblue;">Master</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(./assets/images/960x0.webp);">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Data Science Bootcamp</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="./assets/images/polish-development-fund-en-logo.png" alt="Bootstrap" width="40" height="40" class="rounded-circle border border-white" style="background-color: antiquewhite;">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>Polish development Fund</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>256h</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    <!-- Social media + contact info -->
+    <div class="container px-4 py-5 g-3" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">Contact me & Let's work together!</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"  class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Phone</h3>
+              <p>(+48) 668 854 903</p>
+              <a href="tel: +48668854903" class="btn btn-light">
+                Call me!
+              </a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"  class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                  </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Mail</h3>
+              <p>p.sziroky.us@gmail.com</p>
+              <a href="mailto: p.sziroky.us@gmail.com" class="btn btn-light">
+                E-mail Me!
+              </a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"  class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                  </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Linked IN</h3>
+              <p>Piotr Sziroky</p>
+              <a href="https://www.linkedin.com/in/piotr-sziroky/" class="btn btn-light">
+                Text Me!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <footer class="py-3 my-4">
+        <h4 class="relocate">Ready to Relocate!</h4>
+        <p class="text-center text-body-secondary">© 2024 Piotr Sziroky</p>
+      </footer>
 
-                </li>
-                </li>
-                <li>Spatial Data Engineer - Intership - Kelm Solutions
-                    <hr width="230" align="left" /> 
-                    <p>Description: </p>
-
-                </li>
-
-                <li>SCADA and Telemetry Engineer - Full Time - Traffsoft sp.z.o.o.
-                    <hr width="230" align="left" />
-                    <p>Description: </p>           
-            </ul>
-        </li>    
-    </ol>
-    <br/>
-    <br/>
-    <hr/>
-    <h2>Skill Set</h2>
-    <hr/>
-    <ul>
-        <li><h3>Technical:</h3>
-            <ul>
-                <li>Python</li>
-                <li>HTML</li>
-                <li>Computer Vision</li>
-                <li>MS OFfice</li>
-                <li>Windows</li>
-                <li>Azure</li>
-                <li>SQL</li>
-                <li>GIT</li>
-            </ul>
-        </li>
-        <li><h3>Soft skills:</h3>
-            <ul>
-                <li>Contributed</li>
-                <li>Energetic</li>
-                <li>Ambitious</li>
-                <li>Critical</li>
-                <li>Open Minded</li>
-                <li>Teamworker</li>
-                <li>Friendly</li>
-            </ul>
-        </li>
-    </ul>
-    <hr>
-    <h2>Hobbies</h2>
-    <hr>
-    <p><h3>Music</h3>Since 16yr old I've played in several bands (mostly Rock bands). I'm a singer, guitarist, basist, and also keys. Music is my passion and I can't imagine my life without her.
-    <br>
-    <hr>
-    <h2>Languages</h2>
-    <ul>
-        <li>English - C1</li>
-        <li>Polish - Native</li>
-    </ul>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
-<footer>
-    <hr>
-    <br>
-    <br>
-    <h3>Thank you for getting to the end of the page :D Want to get to know me better? See the <a href="./public/contact.html">Contact Page!</a></h3>
-    <p>© Piotr Sziroky. All rights reserved. </p>
-
-</footer>
 </html>

@@ -1,0 +1,59 @@
+.site-logo {
+    height: 4rem;
+    filter: blur(1px); 
+    filter: invert(100%);
+    margin-bottom: 0px;
+}
+
+svg{
+    filter: invert(100%);
+}
+
+.important{
+    font-weight: bold;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #1e1e26, #5f6061, #343b3c);
+    background-size: 180% 180%;
+    animation: gradient-animation 8s ease infinite;
+  }
+  
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.break{
+    height: 10px;
+    background-color: antiquewhite;
+    margin-top: -5px;
+ }
+
+ .meet-me{
+    display: flex;
+    height: 30rem;
+    justify-content: center;
+ }
+
+.divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    color: #1e1e26;
+    height: 50px;
+}
+
+.relocate{
+    display: flex;
+    justify-content: center;
+}
